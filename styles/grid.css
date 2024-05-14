@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.btn{
+    padding: 13px 18px;
+    border: none;
+    background-color: #2657A4;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    border-radius: 3px;
+}
+header{
+    background-image:  url(../images/hero-vector-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 850px;
+    width: 100%;
+}
+.head{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 90px auto;
+}
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;   
+    align-items: center;
+    grid-column: 1 / -1;
+}
+.navbar .logo{
+    /* flex-basis: 40%; */
+    margin-top: 20px;
+    cursor: pointer;
+    grid-column: 3 /4;
+}
+.navbar .menu{
+    /* flex-basis: 60%; */
+    margin-top: 20px;
+    grid-column: 4 / -1;
+    
+}
+.navbar .menu li{
+    display: inline-block;
+    list-style: none;
+}
+.navbar .menu .menu-list:hover{
+    background-color: aquamarine;
+}
+.navbar .menu .menu-list{
+    text-decoration: none;
+    color: #51565E;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-right: 10px;
+    padding: 10px 15px;
+}
+.navbar .menu .active{
+    color: #2657A4;
+
+}
+.navbar .menu .btn-nav{
+    transition: 0.5 ease-in;
+}
+.navbar .menu .btn-nav:hover{
+    background-color: #4b6999;
+}
+/* navbar style end */
+
+/* hero style */
+
+.hero{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    justify-content: space-between;
+    padding: 0px 20px;
+    align-content: center;
+    grid-column: 1 / -1;
+}
+
+.hero .hero-text{
+    width: 30%;
+    margin-top: 100px;
+    grid-column: 3 / 7;
+}   
+.hero .hero-text h1{
+    font-size: 3rem;
+    font-family: 'inter', 'sans-serif';
+    font-weight: 600;
+    width: 450px;
+    color: #060E1A;
+    padding: 10px;
+}
+.hero .hero-text .hero-text-span{
+    color: #2657A4;
+    position: relative;
+}
+.hero .hero-text .hero-text-span::before{
+    content: url(../images/after.png);
+    position: absolute;
+    /* background-image: url(../images/Vector\ 6.png); */
+    display: inline-block;
+    margin-top: 18px;
+}
+.hero .hero-img{
+    margin-right: 50px;
+    width: 760px;
+    height: 570px;
+    grid-column: 7 / -1;
+}
+
+.hero .hero-text .hero-paragraph{
+    margin: 25px 0px;
+    width: 400px;
+    padding: 10px;
+}
